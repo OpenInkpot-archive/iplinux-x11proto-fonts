@@ -1,0 +1,25 @@
+Source: x11proto-fonts
+Section: libdevel
+Priority: optional
+Maintainer: Yauhen Kharuzhy <jekhor@gmail.com>
+Build-Depends: debhelper (>= 4.0.0)
+XCS-Cross-Host-Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.7.3
+Vcs-Git: git://git.debian.org/git/pkg-xorg/proto/x11proto-fonts
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-fonts.git
+
+Package: x11proto-fonts-dev
+Architecture: all
+Depends: x11proto-core-dev, ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libfs-dev (<< 6.8.2-16)
+Replaces: libfs-dev (<< 6.8.2-16)
+Description: X11 font extension wire protocol
+ This package provides development headers describing the wire protocol
+ for font-related extensions, used to control the server-side font
+ configuration, and also the font server headers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
